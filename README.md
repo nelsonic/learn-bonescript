@@ -65,6 +65,7 @@ Here's a video of mine: http://www.youtube.com/watch?v=1u3gNDfvSDQ
 
 >> More exciting projects to follow! (need to get back to work...)
 
+- - -
 
 #### Notes:
 
@@ -79,3 +80,29 @@ Here's a video of mine: http://www.youtube.com/watch?v=1u3gNDfvSDQ
 - LCD: http://uk.rs-online.com/web/p/processor-microcontroller-development-kits/7753802/
 - Launchpad: http://processors.wiki.ti.com/index.php/MSP430_LaunchPad
 - TRF7970A Transceiver (NFC/RFID): http://www.digikey.com/product-highlights/us/en/texas-instruments-trf7970a-transceiver-ic/160
+
+#### Why?
+
+My aim is to create an NFC/RFID security system for my house.
+Including door entry for the house (which de-activates security alarms)
+Garage door entry and light activation.
+
+I've done a fair amount of research into this.
+There are existing solutions employing Aduino, Raspberry Pi and BeagleBone
+(and a few lower power chips with non-existent documentaion...)
+Hackspace London are using a custom setup to allow Oyster card entry.
+
+I like this approach because everyone in our house and all our guests will
+have oyster cards.
+
+I chose the BeagleBone because it runs Node.js from boot so I can 
+practice my *existing* skills.
+From the looks of things its going to require a considerable amount of effort
+to pull it off.
+
+Will continue to do research and come back to this project once I have
+something viable.
+Meanwhile I've ordered the **Make** BeagleBone Book from Amazon:
+http://www.amazon.com/gp/product/1449345379/
+(Generally favorable reviews. 144 pages. Readable in a weekend)
+So when that arrives I will update this repo. ;-)
