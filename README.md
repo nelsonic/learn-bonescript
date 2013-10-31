@@ -36,26 +36,25 @@ and create a new file called **flash.js**:
 
 
 ```javascript
-var b = require('bonescript');
-console.log('Beagle says hi!');
+var b = require('bonescript'),
+    led = 3, state; // globals (forgivable in a nano-script!)
 
-setInterval(toggle, 500);
-
-var state;
-var led = 0;
 function toggle() {
     if(state === b.LOW) {
         state = b.HIGH;
-    } else {
-        state = b.LOW;
-        if(led === 3) { 
+        if(led === 3) {
             led = 0; 
         } else {
             led++; 
         }
+    } else {
+        state = b.LOW;
     }
     b.digitalWrite("USR"+led, state);
+    console.log("LED # "+led +" | "+state);
 }
+
+setInterval(toggle, 100);
 ```
 
 ![Flashing Lights Script](https://raw.github.com/nelsonic/learn-bonescript/master/images/bonescript-basic-flashing-leds.png "Flashing Lights hello.js")
